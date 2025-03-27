@@ -21,5 +21,6 @@ public class CoheteScript : MonoBehaviour
     public void Despegue()
     {
        velocidad = 0.1f;
+        transform.Rotate(45f0f, 0f);
     }
 }

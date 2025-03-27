@@ -7,6 +7,7 @@ public class BotonScript : MonoBehaviour
     public GameObject botonGO;
     public GameObject llama;
     public CoheteScript CoheteScript;
+    public GameObject torres;
 
     // Start is called before the first frame update
     void Start()
@@ -24,7 +25,9 @@ public class BotonScript : MonoBehaviour
     {
         botonGO.SetActive(false);
         llama.SetActive(true);
-        CoheteScript.Despegue(); 
+        CoheteScript.Despegue();
+        torres.SetActive(true);
+    
     }
 
     void OnMouseUp()
