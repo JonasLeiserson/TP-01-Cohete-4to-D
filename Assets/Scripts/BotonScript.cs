@@ -5,6 +5,8 @@ using UnityEngine;
 public class BotonScript : MonoBehaviour
 {
     public GameObject botonGO;
+    public GameObject llama;
+    public CoheteScript CoheteScript;
 
     // Start is called before the first frame update
     void Start()
@@ -21,10 +23,13 @@ public class BotonScript : MonoBehaviour
     void OnMouseDown()
     {
         botonGO.SetActive(false);
+        llama.SetActive(true);
+        CoheteScript.Despegue(); 
     }
 
     void OnMouseUp()
     {
         botonGO.SetActive(true);
+        llama.SetActive(false);
     }
 }
